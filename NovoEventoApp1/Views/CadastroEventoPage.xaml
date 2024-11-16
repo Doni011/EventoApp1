@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="NovoEventoApp1.Views.CadastroEventoPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="DeepSkyBlue">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="1"
+                         Spacing="0">
+
+       
+        <Frame Padding="5" 
+               HeightRequest="50" WidthRequest="300"
+               Margin="3,5,3,0"
+               BackgroundColor="LightBlue"
+               CornerRadius="10"
+               BorderColor="Black">
+            <Label Text="Cadastre seu Evento"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   TextColor="Black"/>
+        </Frame>
+
+       
+        <Frame Padding="20" 
+               BackgroundColor="AliceBlue"
+               CornerRadius="10"
+               BorderColor="Black"
+               Margin="10,10,10,0">
+            <StackLayout Spacing="2">
+                
+                <Label Text="Nome do Evento:"
+                       FontFamily="Oswald"/>
+                <Entry Text="{Binding Nome}" 
+                       BackgroundColor="White"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="20" Padding="10">
+                    <!-- Data de Início -->
+                    <StackLayout>
+                        <Label Text="Data de Início:"
+                         FontFamily="Oswald" />
+                        <DatePicker Date="{Binding DataInicio}"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <!-- Data de Término -->
+                    <StackLayout>
+                        <Label Text="Data de Término:"
+                        FontFamily="Oswald" Margin="40,0,0,0" />
+                        <DatePicker Date="{Binding DataTermino}"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand" Margin="40,0,0,0"/>
+                        
+                    </StackLayout>
+
+                </StackLayout>
+            
+
+                <Label Text="Número de Participantes:"
+                       FontFamily="Oswald"/>
+                <Entry Text="{Binding NumeroParticipantes}"
+                       BackgroundColor="White"/>
+
+               
+                <Label Text="Local do Evento:" 
+                       FontFamily="Oswald"/>
+                <Entry Text="{Binding Local}"
+                       BackgroundColor="White"/>
+
+                
+                <Label Text="Custo por Participante:" 
+                       FontFamily="Oswald"/>
+                <Entry Text="{Binding CustoPorParticipante}"
+                       BackgroundColor="White"/>
+                
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Cadastrar Evento" 
+                Clicked="OnSalvarEventoClicked"
+                CornerRadius="22"
+                Margin="33,10,33,0"
+                BackgroundColor="RoyalBlue"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
