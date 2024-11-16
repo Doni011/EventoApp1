@@ -1,4 +1,4 @@
-﻿namespace NovoEventoApp1.Models // O namespace deve ser o mesmo que você está tentando usar no seu código
+﻿namespace NovoEventoApp1.Models
 {
     public class Evento
     {

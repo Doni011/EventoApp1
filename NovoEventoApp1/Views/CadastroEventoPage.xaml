@@ -37,7 +37,7 @@
                        BackgroundColor="White"/>
 
                 <StackLayout Orientation="Horizontal" Spacing="20" Padding="10">
-                    <!-- Data de Início -->
+                    
                     <StackLayout>
                         <Label Text="Data de Início:"
                          FontFamily="Oswald" />
@@ -46,7 +46,7 @@
                         HorizontalOptions="FillAndExpand" />
                     </StackLayout>
 
-                    <!-- Data de Término -->
+                    
                     <StackLayout>
                         <Label Text="Data de Término:"
                         FontFamily="Oswald" Margin="40,0,0,0" />

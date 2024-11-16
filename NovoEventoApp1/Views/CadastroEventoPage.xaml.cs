@@ -46,7 +46,7 @@ namespace NovoEventoApp1.Views
                 return;
             }
 
-            // Navega para a página de Resumo de Evento, passando o objeto Evento
+            
             await Navigation.PushAsync(new ResumoEventoPage(Evento));
         }
     }
